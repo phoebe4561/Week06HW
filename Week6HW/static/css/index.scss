@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  height: 20vh;
+  width: 100%;
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+section.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    div.name {
+      margin: 0.3rem;
+    }
+    div.username {
+      margin: 0.3rem;
+    }
+    div.password {
+      margin: 0.3rem;
+    }
+    button {
+      margin: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      border-style: none;
+      &:hover {
+        background-color: aquamarine;
+      }
+    }
+  }
+}
+
+hr {
+  width: 100%;
+}
+
+section.signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    div.username {
+      margin: 0.3rem;
+    }
+    div.password {
+      margin: 0.3rem;
+    }
+    button {
+      margin: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      border-style: none;
+      &:hover {
+        background-color: aquamarine;
+      }
+    }
+  }
+}
+
+div.flash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  p {
+    color: white;
+    background-color: rgb(98, 146, 98);
+    width: 10vw;
+    text-align: center;
+  }
+}

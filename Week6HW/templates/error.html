@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title%}登入失敗頁面{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename = 'css/page.css')}}">
+{% endblock %}
+
+{% block header%}
+    <h2>登入失敗</h2>
+{% endblock %}
+
+{% block content%}
+    <p>{{message}}</p>
+    <div class=link>
+        <a href="/">回到首頁</a>
+    </div>    
+{% endblock %}
+
+
+<!-- <!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Phoebe" />
+    <meta name="rating" content="General" />
+    <meta name="robots" content="index,follow" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+   
+  
+    <script src="https://kit.fontawesome.com/eb2b622fe6.js" crossorigin="anonymous"></script>
+    <title>登入失敗頁面</title>
+
+</head>
+<body>
+    <header>
+        <h2>登入失敗</h2>
+    </header>
+    <section>
+        <p>{{message}}</p>
+        <a href="/">回到首頁</a>
+    </section>
+</body>
+</html> -->

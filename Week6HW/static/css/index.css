@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aquamarine;
+  height: 20vh;
+  width: 100%;
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+section.signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.signup h4 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem 0;
+}
+
+section.signup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+section.signup form div.name {
+  margin: 0.3rem;
+}
+
+section.signup form div.username {
+  margin: 0.3rem;
+}
+
+section.signup form div.password {
+  margin: 0.3rem;
+}
+
+section.signup form button {
+  margin: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-style: none;
+}
+
+section.signup form button:hover {
+  background-color: aquamarine;
+}
+
+hr {
+  width: 100%;
+}
+
+section.signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.signin h4 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem 0;
+}
+
+section.signin form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+section.signin form div.username {
+  margin: 0.3rem;
+}
+
+section.signin form div.password {
+  margin: 0.3rem;
+}
+
+section.signin form button {
+  margin: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-style: none;
+}
+
+section.signin form button:hover {
+  background-color: aquamarine;
+}
+
+div.flash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+div.flash p {
+  color: white;
+  background-color: #629262;
+  width: 10vw;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

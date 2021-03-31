@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title%}登入頁面{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename = 'css/index.css')}}">
+{% endblock %}
+
+{% block header%}
+    <h2>歡迎光臨,請註冊登入系統</h2>
+{% endblock %}
+
+{% block content%}
+<h4>註冊帳號</h4>
+<form action="/signup" method="POST">
+    <div class=name>
+        <label for="name">姓名</label>
+        <input id="name" type="text" name="name" required>
+        <br/>
+    </div>
+    <div class=username>
+        <label for="username">帳號</label>
+        <input id="username" type="text" name="username" required>
+        <br/>
+    </div >
+    <div class=password>
+        <label for="password">密碼</label>
+        <input id="password" type="password" name="password" required>
+        <br/>
+    </div >
+    
+    <button>註冊</button>
+</form>
+
+<hr>
+
+    <h4>登入系統</h4>
+    <form action="/signin" method="POST">
+        
+        <div class=username>
+            <label for="username">帳號</label>
+            <input id="username" type="text" name="username" required>
+            <br/>   
+        </div>
+
+        <div class=password>
+            <label for="password">密碼</label>
+            <input id="password" type="password" name="password" required>
+            <br/>
+        </div>
+
+        <button>登入</button>
+    </form>
+{% endblock %}
+
+
+<!--
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Phoebe" />
+    <meta name="rating" content="General" />
+    <meta name="robots" content="index,follow" />
+-->
+
+    <!--google font
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    -->
+    <!--!fontawsome
+    <script src="https://kit.fontawesome.com/eb2b622fe6.js" crossorigin="anonymous"></script>
+    
+     <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename = 'css/index.css')}}">
+    <title>登入頁面</title>
+
+</head>
+<body>
+    <header>
+        <h2>歡迎光臨,請註冊登入系統</h2>
+    </header>
+
+    <section class="signup">
+        <h4>註冊帳號</h4>
+        <form action="/signup" method="POST">
+            <div class=name>
+                <label for="name">姓名</label>
+                <input id="name" type="text" name="name" required>
+                <br/>
+            </div>
+            <div class=username>
+                <label for="username">帳號</label>
+                <input id="username" type="text" name="username" required>
+                <br/>
+            </div >
+                <div class=password>
+                <label for="password">密碼</label>
+                <input id="password" type="password" name="password" required>
+                <br/>
+            </div >
+
+            <button>註冊</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section class="signin">
+        <h4>登入系統</h4>
+        <form action="/signin" method="POST">
+            
+            <div class=username>
+                <label for="username">帳號</label>
+                <input id="username" type="text" name="username" required>
+                <br/>   
+            </div>
+
+            <div class=password>
+                <label for="password">密碼</label>
+                <input id="password" type="password" name="password" required>
+                <br/>
+            </div>
+
+            <button>登入</button>
+        </form>
+    </section>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class=flash>
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        {% endwith %}
+</body>
+</html>
+-->
